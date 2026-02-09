@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome | Genoveva</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+
+  <style>
+    body{
+      margin:0;
+      height:100vh;
+      overflow:hidden;
+      font-family:'Poppins',sans-serif;
+      background:#1f1f1f;
+      color:#fff;
+    }
+
+    /* VIDEO BACKGROUND */
+    .bg-video{
+      position:fixed;
+      bottom:0;
+      left:0;
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      z-index:-3;
+      filter:brightness(0.6) contrast(1.05);
+    }
+
+    /* OVERLAY BIAR SOFT */
+    .video-overlay{
+      position:fixed;
+      inset:0;
+      background:linear-gradient(
+        to bottom,
+        rgba(31,31,31,0.9),
+        rgba(31,31,31,0.65),
+        rgba(31,31,31,0.9)
+      );
+      z-index:-2;
+    }
+
+    /* INTRO */
+    .intro{
+      height:100vh;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      animation:fadeIn 1.6s ease;
+      z-index:2;
+      position:relative;
+    }
+
+    h1{
+      font-family:'Playfair Display',serif;
+      font-size:3rem;
+      margin-bottom:.8rem;
+    }
+
+    span{color:#8b6f47}
+
+    p{
+      color:#cfcfcf;
+      margin-bottom:2rem;
+    }
+
+    a{
+      text-decoration:none;
+      padding:.9rem 2.2rem;
+      border:1px solid #8b6f47;
+      color:#fff;
+      letter-spacing:2px;
+      transition:.4s;
+    }
+
+    a:hover{
+      background:#8b6f47;
+      color:#1f1f1f;
+    }
+
+    @keyframes fadeIn{
+      from{opacity:0;transform:translateY(20px)}
+      to{opacity:1;transform:translateY(0)}
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- VIDEO -->
+  <video class="bg-video" autoplay muted loop playsinline>
+  <source src="videopoto.mp4" type="video/mp4">
+</video>
+
+
+  <!-- OVERLAY -->
+  <div class="video-overlay"></div>
+
+  <!-- INTRO CONTENT -->
+  <div class="intro">
+    <h1>Genoveva <span>Virginia <span>Winomo</span></h1>
+    <p>Illustrator • Creative Portfolio</p>
+    <a href="portfolio.html">MASUK PORTOFOLIO</a>
+  </div>
+
+</body>
+</html>

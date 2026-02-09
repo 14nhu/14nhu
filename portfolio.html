@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Genoveva Virginia Winomo | Portofolio</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --primary:#2c2c2c;
+      --secondary:#8b6f47;
+      --bg:#f6f4f1;
+      --card:#ffffff;
+      --light:#6b6b6b;
+    }
+
+    *{margin:0;padding:0;box-sizing:border-box}
+
+    body{
+      font-family:'Poppins',sans-serif;
+      background:var(--bg);
+      color:var(--primary);
+      line-height:1.7;
+    }
+
+    header{
+      background:#1f1f1f;
+      color:#fff;
+      padding:6rem 2rem;
+      position:relative;
+      overflow:hidden;
+    }
+
+    header::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:repeating-linear-gradient(
+        45deg,
+        rgba(139,111,71,.25),
+        rgba(139,111,71,.25) 1px,
+        transparent 1px,
+        transparent 24px
+      );
+      opacity:.35;
+    }
+
+    .hero{
+      max-width:1100px;
+      margin:auto;
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:3rem;
+      align-items:center;
+      position:relative;
+      z-index:2;
+    }
+
+    .hero-frame{
+      position:absolute;
+      inset:-40px;
+      border:2px solid var(--secondary);
+      pointer-events:none;
+    }
+
+    .hero-text h1{
+      font-family:'Playfair Display',serif;
+      font-size:3.2rem;
+    }
+
+    .hero-text span{color:var(--secondary)}
+
+    .divider{
+      width:120px;
+      height:3px;
+      background:var(--secondary);
+      margin:1.5rem 0;
+    }
+
+    .hero-text p{color:#e0e0e0}
+
+    .profile-photo{
+      width:300px;
+      height:380px;
+      margin-left:auto;
+      border-radius:14px;
+      overflow:hidden;
+      border:4px solid var(--secondary);
+      box-shadow:0 25px 60px rgba(0,0,0,.5);
+    }
+
+    .profile-photo img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+    }
+
+    section{
+      max-width:1100px;
+      margin:auto;
+      padding:5rem 2rem;
+      position:relative;
+    }
+
+    h2{
+      font-family:'Playfair Display',serif;
+      font-size:2.3rem;
+      margin-bottom:2.5rem;
+    }
+
+    h2::after{
+      content:"";
+      display:block;
+      width:70px;
+      height:3px;
+      background:var(--secondary);
+      margin-top:.6rem;
+    }
+
+    .motif{
+      position:absolute;
+      inset:0;
+      background:
+        radial-gradient(circle at 15% 25%, rgba(139,111,71,.35) 2px, transparent 3px),
+        radial-gradient(circle at 85% 75%, rgba(139,111,71,.35) 2px, transparent 3px);
+      background-size:80px 80px;
+      opacity:.35;
+      pointer-events:none;
+    }
+
+    section > *{position:relative;z-index:2}
+
+    .gallery{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:2rem;
+    }
+
+    .card{
+      background:var(--card);
+      border-radius:18px;
+      overflow:hidden;
+      box-shadow:0 15px 40px rgba(0,0,0,.12);
+      transition:.4s ease;
+    }
+
+    .card:hover{
+      transform:translateY(-10px);
+      box-shadow:0 30px 60px rgba(0,0,0,.25);
+    }
+
+    .card img{
+      width:100%;
+      height:200px;
+      object-fit:cover;
+    }
+
+    .card-content{padding:1.5rem}
+
+    footer{
+      background:#1f1f1f;
+      color:#bfbfbf;
+      text-align:center;
+      padding:2rem;
+    }
+
+    footer span{color:var(--secondary)}
+
+    @media(max-width:768px){
+      .hero{grid-template-columns:1fr;text-align:center}
+      .profile-photo{margin:2rem auto 0}
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="hero">
+    <div class="hero-frame"></div>
+    <div class="hero-text">
+      <h1>Genoveva <span>Virginia Winomo</span></h1>
+      <div class="divider"></div>
+      <p>Illustrator, Designer</p>
+    </div>
+    <div class="profile-photo">
+      <img src="pasfoto.jpg">
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="motif"></div>
+  <h2>Tentang Saya</h2>
+  <p style="max-width:700px;color:var(--light)">
+    Halo, saya Veva. Saya memiliki ketertarikan besar pada dunia menggambar dan desain, terutama dalam menciptakan karakter baru dengan gaya visual yang unik dan penuh cerita. Bagi saya, setiap desain adalah cara untuk mengekspresikan ide, imajinasi, dan emosi secara visual. Saya lulusan SMK Grafika Desa Putera jurusan Desain Komunikasi Visual (DKV). Selama belajar, saya mengembangkan kemampuan di bidang ilustrasi dan desain.
+  </p>
+</section>
+
+<section>
+  <div class="motif"></div>
+  <h2>Riwayat Pendidikan</h2>
+  <div class="gallery">
+    <div class="card"><div class="card-content"><h3>SD (2014–2020)</h3><p>Eureka National Plus</p></div></div>
+    <div class="card"><div class="card-content"><h3>SMP (2020–2023)</h3><p>SMP Regina Pacis Bogor</p></div></div>
+    <div class="card"><div class="card-content"><h3>SMK (2023–2026)</h3><p>SMK Grafika Desa Putera</p></div></div>
+  </div>
+</section>
+
+
+<!-- ===== PORTOFOLIO / KARYA ===== -->
+<section>
+  <div class="motif"></div>
+  <h2>Karya</h2>
+
+  <div class="gallery">
+
+    <a href="https://drive.google.com/drive/folders/1-bOTGwwyAVQLHYs16_ifUsjXGV39amFe?usp=drive_link" target="_blank">
+      <div class="card">
+        <img src="elliewilliamart.jpg">
+        <div class="card-content">
+          <h3>Desain Ilustrasi</h3>
+          <p>Kumpulan karya desain ilustrasi.</p>
+        </div>
+      </div>
+    </a>
+
+    <a href="https://drive.google.com/drive/folders/102dO0yEgZWLmAj7SxjO8S6wFWfK8cBWM" target="_blank">
+      <div class="card">
+        <img src="desainposter.jpg">
+        <div class="card-content">
+          <h3>Desain</h3>
+          <p>Kumpulan karya desain grafis.</p>
+        </div>
+      </div>
+    </a>
+
+    <a href="https://drive.google.com/drive/folders/1-wpwXsGSA6cRtt3zeowmDz6l42wJ9ZOk" target="_blank">
+      <div class="card">
+        <img src="fotografi.jpeg">
+        <div class="card-content">
+          <h3>Fotografi</h3>
+          <p>Dokumentasi dan fotografi.</p>
+        </div>
+      </div>
+    </a>
+
+    <a href="https://drive.google.com/drive/folders/1-x4_n85D6fZNkUoue5-XxlETLToA_GTX" target="_blank">
+      <div class="card">
+        <img src="karya3.jpg">
+        <div class="card-content">
+          <h3>Animasi</h3>
+          <p>Animasi dan multimedia.</p>
+        </div>
+      </div>
+    </a>
+
+    <a href="https://drive.google.com/drive/folders/105Jb57-mqb831z2dND6x4Cqs25yGBTEE" target="_blank">
+      <div class="card">
+        <img src="karya1.jpg">
+        <div class="card-content">
+          <h3>Videografi</h3>
+          <p>Karya video & editing.</p>
+        </div>
+      </div>
+    </a>
+
+  </div>
+</section>
+
+<section>
+  <div class="motif"></div>
+  <h2>Kontak</h2>
+  <div class="gallery">
+    <div class="card"><div class="card-content"><h3>Nomor Telepon</h3><p>0811 8879 448</p></div></div>
+    <div class="card"><div class="card-content"><h3>Instagram</h3><p><a href="https://instagram.com/genovevavw" target="_blank">@genovevavw</a></p></div></div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 <span>Genoveva Virginia Winomo</span> | Illustrator, Designer</p>
+</footer>
+
+</body>
+</html>
